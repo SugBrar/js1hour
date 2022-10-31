@@ -17,3 +17,9 @@ let isApproved = true; // Boolean literal
 let firstName = undefined;
 let selectedColor = null;
 
+//object
+let person = {
+    pName: 'Elahi',
+    pAge: 2
+};
+console.log(person);
