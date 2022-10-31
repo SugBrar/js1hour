@@ -44,7 +44,7 @@ console.log(selectColors[1]);
 console.log(selectColors.length);
 
 
-//function
+//function - perfoming a task
 function greet(gName,gLastName){
     console.log('Hello ' + gName + ' ' + gLastName);
 }
@@ -52,4 +52,15 @@ function greet(gName,gLastName){
 greet('John');
 
 greet('Elahi','Gill');
+
+// function - calculation a value
+function square(number){
+    return number * number;
+}
+
+let number = square(2);
+
+console.log(square(3));
+
+
 
