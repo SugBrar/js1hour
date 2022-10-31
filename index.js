@@ -35,3 +35,9 @@ console.log(person.pAge);
 let selection = 'pName';
 person[selection] = 'Navdeep';
 console.log(person.pName) ;
+
+// Arrays
+let selectColors = ['red','blue', 'green'];
+selectColors[3] = 2 ;
+console.log(selectColors);
+console.log(selectColors[1]);
