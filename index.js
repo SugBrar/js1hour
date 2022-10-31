@@ -22,4 +22,8 @@ let person = {
     pName: 'Elahi',
     pAge: 2
 };
-console.log(person);
+
+//Dot Notation
+person.pName = 'Gill';
+
+console.log(person.pName);
