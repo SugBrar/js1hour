@@ -1,0 +1,28 @@
+let weekNum= 5;
+
+if (weekNum==1){
+    console.log("Sunday");
+}
+else if (weekNum ==2){
+    console.log("Monday");
+}
+else if (weekNum ==3){
+    console.log("Tuesday");
+}
+else if (weekNum == 4){
+    console.log("Wednesday");
+}
+else if (weekNum ==5){
+    console.log("Thrusday");
+}
+else if (weekNum ==6){
+    console.log("Friday");
+}
+else if (weekNum ==7){
+    console.log("Saturday");
+}
+else {
+    console.log("In valid Week Number");
+}
+    
+
