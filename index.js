@@ -41,3 +41,4 @@ let selectColors = ['red','blue', 'green'];
 selectColors[3] = 2 ;
 console.log(selectColors);
 console.log(selectColors[1]);
+console.log(selectColors.length);
