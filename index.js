@@ -26,4 +26,8 @@ let person = {
 //Dot Notation
 person.pName = 'Gill';
 
+// Bracket Notation
+person['pAge'] = 35;
+
 console.log(person.pName);
+console.log(person.pAge);
