@@ -9,3 +9,11 @@ console.log(name);
 const intrestRate =0.3;
 //intrestRate =1;
 console.log(intrestRate);
+
+// Premitives/Value Type
+let nameP = 'Elahi'; // String literal
+let age = 1; // Number literal
+let isApproved = true; // Boolean literal
+let firstName = undefined;
+let selectedColor = null;
+
