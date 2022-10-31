@@ -23,11 +23,15 @@ let person = {
     pAge: 2
 };
 
-//Dot Notation
+//Dot Notation - easy to use
 person.pName = 'Gill';
-
-// Bracket Notation
-person['pAge'] = 35;
-
 console.log(person.pName);
+
+// Bracket Notation 
+person['pAge'] = 35;
 console.log(person.pAge);
+
+// Bracket Notation - runtime change selection
+let selection = 'pName';
+person[selection] = 'Navdeep';
+console.log(person.pName) ;
