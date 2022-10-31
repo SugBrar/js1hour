@@ -42,3 +42,14 @@ selectColors[3] = 2 ;
 console.log(selectColors);
 console.log(selectColors[1]);
 console.log(selectColors.length);
+
+
+//function
+function greet(gName,gLastName){
+    console.log('Hello ' + gName + ' ' + gLastName);
+}
+
+greet('John');
+
+greet('Elahi','Gill');
+
