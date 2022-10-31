@@ -35,3 +35,4 @@ console.log(typeof(value)); //undefined
 
 let status = null;
 console.log(typeof(status)); // null as object
+
