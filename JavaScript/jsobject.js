@@ -29,5 +29,5 @@ for(let x in person)
 {
     //console.log(x); // print only name of the property of the object
     //console.log(person[x]); // print only value of the property of the object
-    console.log(x+": "+person[x]); // print property name and corresding values of the object
+    console.log(x + ": " + person[x]); // print property name and corresding values of the object
 }
