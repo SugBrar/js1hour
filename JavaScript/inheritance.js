@@ -14,8 +14,16 @@ class B extends A{
     }
 }
 
-//Grandchild Class
-class C extends B{
+// //Grandchild Class
+// class C extends B{
+//     c = 70;
+//     view(){
+//         console.log(this.c);
+//     }
+// }
+
+//child Class
+class C extends A{
     c = 70;
     view(){
         console.log(this.c);
@@ -28,12 +36,12 @@ objA.display();
 
 
 objB = new B();
-console.log("Child Class");
+console.log("Child Class of A");
 objB.display();
 objB.show();
 
 objC = new C();
-console.log("GranChild");
+console.log("Child Class of A");
 objC.display();
-objC.show();
+// objC.show();
 objC.view();
