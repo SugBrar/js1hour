@@ -1,31 +1,38 @@
 class Student{
 
-    constructor(){
-        let name,marks;
-    }
+    // constructor(){
+    //     let name,marks;
+    // }
+    static name;
+    static marks; 
 
-    getName(){
+    static getName(){
         return this.name;
     }
 
-    setName(name){
+    static setName(name){
         this.name=name;
     }
 
-    getMarks(){
+    static getMarks(){
         return this.marks;
     }
 
-    setMarks(marks){
+    static setMarks(marks){
         this.marks=marks;
     }
 }
 
-let stu = new Student();
+//let stu = new Student();
 
 // calling setters method
-stu.setName("John");
-stu.setMarks(70);
+// stu.setName("John");
+// stu.setMarks(70);
 
 // calling getters method
-console.log(stu.getName(),stu.getMarks());
+// console.log(stu.getName(),stu.getMarks());
+
+Student.setName("John");
+Student.setMarks(90);
+
+console.log(Student.getName(),Student.getMarks());
