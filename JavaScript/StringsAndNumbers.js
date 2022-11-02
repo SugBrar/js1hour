@@ -4,21 +4,22 @@ let s = "Welcome";
 //let s = new String();
 
 // charAt() - extract/retreive specific character based on the index we pass
-console.log(s.charAt(3));
+console.log(s.charAt(3)); //c
 
 //concat() - concatenate 2 or more strings
-console.log(s.concat(" to Crown Real Estate"));
+console.log(s.concat(" to Crown Real Estate")); //Welcome to Crown Real Estate
 
-console.log(s.concat(" to Crown Real Estate").concat(" - Nav Gill"));
+console.log(s.concat(" to Crown Real Estate").concat(" - Nav Gill")); //Welcome to Crown Real Estate - Nav Gill
 
 //replace() - can replace specific character/string from the main string
 s = "Welcome to JavaScript";
-console.log(s.replace("JavaScript","Java"));
+console.log(s.replace("JavaScript","Java"));//Welcome to Java
+console.log(s.replace("Wel","Jewel")); //Jewelcome to JavaScript
 
 //substring() - extract some portin from the main string
 s = "Welcome";
-console.log(s.substring(0,3)); //wel
-console.log(s.substring(3,7)); //come
+console.log(s.substring(2,4)); //lc
+console.log(s.substring(3,6)); //com
 
 // toLowerCase() & toUpperCase()
 s = "WELcome";
@@ -33,7 +34,7 @@ console.log(sr[0]);
 console.log(sr[1]);
 console.log(sr[2]);
 
-// trim() - spaces can be deleted in the string
+// trim() - spaces at the front and end in the string can be deleted 
 s = "    Welcome    ";
 console.log(s);
 console.log(s.trim());
@@ -57,3 +58,24 @@ z = 'x';
 console.log(Number.isInteger(x)); // true
 console.log(Number.isInteger(y)); // false
 console.log(Number.isInteger(z)); // false
+
+//parseInt() - convert a string into number
+s ="1258";
+console.log(typeof(s)); // string
+console.log(Number.parseInt(s)); //1258
+console.log(typeof(Number.parseInt(s))); //number
+
+//parseFloat() - convert string into number
+s = "125.53";
+console.log(typeof(s)); // string
+console.log(Number.parseFloat(s)); //125.53
+console.log(typeof(Number.parseFloat(s))); //number
+
+// toString() - convert number into a string
+s1 = 1258;
+s2 = 52.8;
+console.log(typeof(s1)); // number
+console.log(typeof(Number.toString(s1))); //string
+console.log(typeof(s2)); // number
+console.log(typeof(Number.toString(s2))); //string
+
