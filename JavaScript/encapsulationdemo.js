@@ -1,11 +1,13 @@
 class Student{
-
+    
+    static name;
+    static marks;
+    
     // constructor(){
     //     let name,marks;
     // }
-    static name;
-    static marks; 
-
+    
+   
     static getName(){
         return this.name;
     }
@@ -23,7 +25,7 @@ class Student{
     }
 }
 
-//let stu = new Student();
+// let stu = new Student();
 
 // calling setters method
 // stu.setName("John");
@@ -32,7 +34,9 @@ class Student{
 // calling getters method
 // console.log(stu.getName(),stu.getMarks());
 
-Student.setName("John");
-Student.setMarks(90);
+
+
+Student.setName("David");
+Student.setMarks(30);
 
 console.log(Student.getName(),Student.getMarks());
