@@ -1,9 +1,9 @@
 
 class student{
-    setDetails(){
-        this.sid = 102;
-        this.sname="John";
-        this.grade="A";
+    setDetails(stid,stname,stgrade){
+        this.sid = stid;
+        this.sname=stname;
+        this.grade=stgrade;
     }
     display(){
         console.log(this.sid,this.sname,this.grade);
@@ -12,5 +12,5 @@ class student{
 }
 
 let stu = new student();
-stu.setDetails();
+stu.setDetails(21,"John","A");
 stu.display();
