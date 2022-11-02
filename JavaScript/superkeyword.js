@@ -26,3 +26,20 @@ a = new Animal("Brown");
 a.printColor();
 d = new Dog("Black","Bread");
 d.display();
+
+class Monkey extends Dog{
+    constructor(color,food,activity){
+        super(color,food);
+        this.activity = activity;        
+    }
+    perform(){
+        console.log("Activity: ",this.activity);
+    }
+    show(){
+        this.display();
+        this.perform();
+    }
+}
+
+c = new Monkey("Brown","Banana","Jump");
+c.show();
