@@ -1,16 +1,23 @@
 
 class student{
-    setDetails(stid,stname,stgrade){
-        this.sid = stid;
-        this.sname=stname;
-        this.grade=stgrade;
+
+    constructor(sid,sname,grade){
+            this.sid = sid;
+            this.sname = sname;
+            this.grade = grade;
     }
+    // setDetails(stid,stname,stgrade){
+    //     this.sid = stid;
+    //     this.sname=stname;
+    //     this.grade=stgrade;
+    // }
     display(){
         console.log(this.sid,this.sname,this.grade);
     }
 
 }
 
-let stu = new student();
-stu.setDetails(21,"John","A");
+// created object 
+let stu = new student(35,"John","A");
+//stu.setDetails(21,"John","A");
 stu.display();
