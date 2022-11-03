@@ -31,7 +31,10 @@ function Person(name){
 const p1 = new Person('Peter')
 const p2 = new Person('Batman')
 
-console.log(p1.name,p2.name)
+//console.log(p1.name,p2.name)
+
+//Default binidng
+sayMyName()
 
 
 
