@@ -14,6 +14,16 @@ const person = {
     }
 }
 
-person.sayMyName()
-console.log(person.name);
+// person.sayMyName()
+// console.log(person.name);
+
+//Explicit binding
+ function sayMyName() {
+    console.log(`My name is ${this.name}`)
+}
+sayMyName.call(person)
+
+
+
+
 
