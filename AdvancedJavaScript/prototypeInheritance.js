@@ -21,3 +21,9 @@ SuperHero.prototype = Object.create(Person.prototype) // SuperHero will call get
 const batman = new SuperHero('Peter','Wayne')
 SuperHero.prototype.construtor = SuperHero
 console.log(batman.getFullName())
+
+
+// function greet(name){
+//     console.log('Hello',name)
+// }
+// greet ("Elahi")
