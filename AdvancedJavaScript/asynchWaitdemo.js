@@ -71,7 +71,7 @@ function resolveWorld() {
 //      (async () => console.log(await resolveWorld()))()  // logs after 1 second
 //     ])
 // }
-// parallel()
+// parallel() // logs - World Hello 
 
 //parallel execution with async & await & Promise.all()
 async function parallel(){
@@ -81,4 +81,4 @@ async function parallel(){
     ])
     console.log('Finally')
 }
-parallel()
+parallel() // logs - World Hello Finally
