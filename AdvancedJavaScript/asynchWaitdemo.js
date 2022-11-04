@@ -64,11 +64,21 @@ function resolveWorld() {
 // }  
 // concurrentStart()
 
-//parallel execution
-function parallel(){
-    Promise.all([
+// //parallel execution with Promise.all()
+// function parallel(){
+//     Promise.all([
+//      (async () => console.log(await resolveHello()))(), // logs after 2 seconds
+//      (async () => console.log(await resolveWorld()))()  // logs after 1 second
+//     ])
+// }
+// parallel()
+
+//parallel execution with async & await & Promise.all()
+async function parallel(){
+    await Promise.all([
      (async () => console.log(await resolveHello()))(), // logs after 2 seconds
      (async () => console.log(await resolveWorld()))()  // logs after 1 second
     ])
+    console.log('Finally')
 }
 parallel()
