@@ -19,12 +19,35 @@
 
 // greet2().then((value) => console.log(value))
 
-// await keyword 
-async function greet(){
-    let promise = new Promise((resolve,reject) => {
-        setTimeout(() => resolve('Hello'),1000)
-    });
-    let result = await promise; // wait until the promise resolves that is 1000 sec
-    console.log(result); // Hello
+// // await keyword - works only inside async function
+// async function greet(){
+//     let promise = new Promise((resolve,reject) => {
+//         setTimeout(() => resolve('Hello'),1000)
+//     });
+//     let result = await promise; // wait until the promise resolves that is 1000 sec
+//     console.log(result); // Hello
+// }
+// greet()
+
+// sequential execution
+function resolveHello() {
+    return new Promise(resolve =>{
+        setTimeout(function() { resolve('Hello')},2000)        
+    })
 }
-greet()
+
+function resolveWorld() {
+    return new Promise(resolve =>{
+        setTimeout(function() { resolve('World')},1000)        
+    })
+}
+
+async function sequentialStart(){
+    const hello = await resolveHello()
+    console.log(hello) // logs after 2 seconds
+
+    const world = await resolveWorld()
+    console.log(world) // logs after 1 second 
+    //total execution time = 3 seconds
+}  
+sequentialStart() 
