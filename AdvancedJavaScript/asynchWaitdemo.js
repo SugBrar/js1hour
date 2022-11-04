@@ -29,7 +29,7 @@
 // }
 // greet()
 
-// sequential execution
+
 function resolveHello() {
     return new Promise(resolve =>{
         setTimeout(function() { resolve('Hello')},2000)        
@@ -42,12 +42,33 @@ function resolveWorld() {
     })
 }
 
-async function sequentialStart(){
-    const hello = await resolveHello()
-    console.log(hello) // logs after 2 seconds
+// // sequential execution
+// async function sequentialStart(){
+//     const hello = await resolveHello()
+//     console.log(hello) // logs after 2 seconds
 
-    const world = await resolveWorld()
-    console.log(world) // logs after 1 second 
-    //total execution time = 3 seconds
+//     const world = await resolveWorld()
+//     console.log(world) // logs after 1 second 
+//     //total execution time = 3 seconds
+// }  
+// sequentialStart() 
+
+//concurrent execution - used when loading different part of the page
+async function concurrentStart(){
+    const hello = resolveHello()
+    const world = resolveWorld()
+
+    console.log( await hello) // logs after 2 seconds
+    console.log( await world) // logs after 2 seconds 
+    //total execution time = 2 seconds
 }  
-sequentialStart() 
+concurrentStart()
+
+// //parallel execution
+// function parallel(){
+//     Promise.all([
+//      (async () => console.log(await resolveHello()))(),
+//      (async () => console.log(await resolveWorld()))()
+//     ])
+// }
+// parallel()
