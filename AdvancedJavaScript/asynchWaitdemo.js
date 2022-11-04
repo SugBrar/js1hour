@@ -54,21 +54,21 @@ function resolveWorld() {
 // sequentialStart() 
 
 //concurrent execution - used when loading different part of the page
-async function concurrentStart(){
-    const hello = resolveHello()
-    const world = resolveWorld()
+// async function concurrentStart(){
+//     const hello = resolveHello()
+//     const world = resolveWorld()
 
-    console.log( await hello) // logs after 2 seconds
-    console.log( await world) // logs after 2 seconds 
-    //total execution time = 2 seconds
-}  
-concurrentStart()
+//     console.log( await hello) // logs after 2 seconds
+//     console.log( await world) // logs after 2 seconds 
+//     //total execution time = 2 seconds
+// }  
+// concurrentStart()
 
-// //parallel execution
-// function parallel(){
-//     Promise.all([
-//      (async () => console.log(await resolveHello()))(),
-//      (async () => console.log(await resolveWorld()))()
-//     ])
-// }
-// parallel()
+//parallel execution
+function parallel(){
+    Promise.all([
+     (async () => console.log(await resolveHello()))(), // logs after 2 seconds
+     (async () => console.log(await resolveWorld()))()  // logs after 1 second
+    ])
+}
+parallel()
